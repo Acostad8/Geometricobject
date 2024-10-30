@@ -12,6 +12,10 @@ public class Rectangle extends Geometricobject  {
         this.wight = wight;
     }
 
+    public Rectangle() {
+
+    }
+
     public double getWight() {
         return wight;
     }
@@ -40,5 +44,23 @@ public class Rectangle extends Geometricobject  {
         System.out.println("el color del rectangulo es = " + getColor());
         System.out.println("el area del rectangulo es = " + getArea());
         System.out.println("el perimetro de rectangulo es = " + getPerimeter());
+    }
+
+
+    public void printRectangle(){
+        System.out.println("Rectangulo");
+        System.out.println(super.toString());
+        System.out.println("{" +
+                "width "+ getWight() +
+                "heigth " + getHeigth() +
+                "Area + " + getArea() +
+                "}");
+    }
+    @Override
+    public String toString() {
+        return "Rectangle{" +
+                "wight=" + wight +
+                ", heigth=" + heigth +
+                '}';
     }
 }

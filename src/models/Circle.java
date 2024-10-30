@@ -11,6 +11,13 @@ public class Circle extends Geometricobject {
         this.radius = radius;
     }
 
+    public Circle() {
+        
+    }
+
+    public Circle(int i) {
+    }
+
     public double getRadius() {
         return radius;
     }
@@ -37,5 +44,24 @@ public class Circle extends Geometricobject {
         System.out.println("el area de circulo es = " + getArea());
         System.out.println("el perimetro de circulo es = " + getPerimeter());
         System.out.println("el diametro de ciculo es = " + getDiametro());
+    }
+    
+    
+    public void printcirculo(){
+        System.out.println("circle");
+        System.out.println(super.toString());
+        System.out.println("{" +
+                "radius" + radius +
+                ", Area " + getArea() + 
+                "perimetro " + getPerimeter() + 
+                "diametro " + getDiametro()
+        );
+    }
+
+    @Override
+    public String toString() {
+        return "Circle{" +
+                "radius=" + radius +
+                '}';
     }
 }
